@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Color for the cards. Currently 'gray 800' -->
+    <color name="card_background">#424242</color>
+
+    <!-- Main Activity background. Currently 'lime 500' -->
+    <color name="bright_01">#CDDC39</color>
+
+    <!-- Activity background. Currently 'light blue 500' -->
+    <color name="bright_02">#03A9F4</color>
+
+    <!-- Activity background. Currently 'light teal 400' -->
+    <color name="bright_03">#26A69A</color>
+
+    <!-- Activity background. Currently 'yellow 500' -->
+    <color name="bright_04">#FFEB3B</color>
+
+</resources>
