@@ -19,4 +19,10 @@
     <!-- Activity background. Currently 'yellow 500' -->
     <color name="bright_04">#FFEB3B</color>
 
+    <!-- Activity background. Currently 'amber 400' -->
+    <color name="bright_05">#FFCA28</color>
+
+    <!-- Activity background. Currently 'pink 200' -->
+    <color name="bright_06">#F48FB1</color>
+
 </resources>

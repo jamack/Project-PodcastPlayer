@@ -23,10 +23,14 @@
             android:label="My Podcasts" />
         <activity
             android:name=".DiscoverPodcasts"
-            android:label="Discover Podcasts"></activity>
-        <activity android:name=".PodcastDetails"
-            android:label="Podcast Details">
-        </activity>
+            android:label="Discover Podcasts" />
+        <activity
+            android:name=".PodcastDetails"
+            android:label="Podcast Details" />
+        <activity
+            android:name=".Payment"
+            android:label="Purchase"></activity>
+        <activity android:name=".PodcastPlayer"></activity>
     </application>
 
 </manifest>

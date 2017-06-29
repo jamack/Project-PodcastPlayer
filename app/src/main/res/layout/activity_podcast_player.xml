@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bright_06"
+    tools:context="com.example.android.project_podcastplayer.PodcastPlayer" >
+
+    <LinearLayout
+        android:id="@+id/card_activities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_weight="0"
+        android:background="@drawable/card_background"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action Center"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="true"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This area will contain buttons for the user to navigate to the other components of the app.
+                \nSelecting any of the buttons will take the user to the respective activity"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-thin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fullplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This area will contain full player with player controls, expanded info on currently playing episode, plus additional controls like bookmarks, share, etc..
+                \nTouching any part other than the control buttons will take user to the Full Player activity."
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-thin"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

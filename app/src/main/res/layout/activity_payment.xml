@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bright_05"
+    tools:context="com.example.android.project_podcastplayer.Payment" >
+
+    <LinearLayout
+        android:id="@+id/card_payment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This area will contain option to purchase the app and remove ads, plus a Home button.
+                \nSelecting the Home button will take the user to the Main activity"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-thin"/>
+        <!--TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="99% Invisible"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/thumbnail_99pi"/-->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
