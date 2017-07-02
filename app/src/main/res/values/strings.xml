@@ -1,3 +1,73 @@
 <resources>
     <string name="app_name">Project-PodcastPlayer</string>
+
+    <!-- These strings are specific to the Home activity (Main Activity) -->
+    <string name="activity_main_heading">Most Listened To
+        \n+
+        \nContinue Listening
+        \n+
+        \nmini-player
+    </string>
+    <string name="activity_main_description">This Activity would contain a listing of the user\'s most frequently listened to podcast channels,
+        a listing of unfinished podcast episodes, and a miniplayer with minimal playback controls.
+        \n\nIt would also contain a notice (with link) that the user could remove ads by purchasing the app.
+    </string>
+
+    <!-- These strings are specific to the My Podcasts activity -->
+    <string name="my_podcasts_heading">User\'s Favorite Podcast Channels
+        \n+
+        \nMini-player
+    </string>
+    <string name="my_podcasts_description">This Activity would contain a listing of podcast channel that the user has marked
+        as \'favorite\', organized by genre.
+        \n\nIt would also contain a miniplayer with minimal playback controls, so the user can listen to podcasts while using
+        this Activity.
+    </string>
+
+    <!-- These strings are specific to the Discover Podcasts activity -->
+    <string name="discover_podcasts_heading">Available Podcast Channels
+        \n+
+        \nMini-player
+    </string>
+    <string name="discover_podcasts_description">This Activity would contain a listing of all available podcast channels,
+        searchable and sortable, for the user to peruse and discover.
+        \n\nIt would also contain a miniplayer with minimal playback controls, so the user can listen to podcasts while using this Activity.
+    </string>
+
+    <!-- These strings are specific to the Podcast Details activity -->
+    <string name="podcast_details_heading">Podcast Channel Details/Overview/Episodes
+        \n+
+        \nMini-player
+    </string>
+    <string name="podcast_details_description">This Activity would contain a listing of all available podcast channels,
+        searchable and sortable, for the user to peruse and discover.
+        \n\nIt would also contain a miniplayer with minimal playback controls, so the user can listen to podcasts
+        while using this Activity.
+    </string>
+
+    <!-- These strings are specific to the Podcast Player (aka Full Player) activity -->
+    <string name="podcast_player_heading">Full Player
+        \n+
+        \nAction Center
+    </string>
+    <string name="podcast_player_description">This Activity will contain full player with player controls,
+        expanded info on currently playing episode, plus additional controls like bookmarks, share, etc..
+        \n\nThis Activity will also contain buttons for the user to navigate to the other components of the app.
+    </string>
+
+    <!-- These strings are specific to the Payment activity -->
+    <string name="payment_heading">Payment</string>
+    <string name="payment_description">This Activity would contain the means for the user to remove ads by purchasing the app.</string>
+
+    <!-- These strings are used by multiple activities -->
+    <string name="all_activities_linked_activities_heading">Content in this Activity would link to these Activities:</string>
+    <string name="link_text_podcast_details">Podcast Details</string>
+    <string name="link_text_full_player">Full Player</string>
+    <string name="link_text_payment">Payment</string>
+    <string name="link_text_home">Home</string>
+    <string name="link_text_discover_podcasts">Discover Podcasts</string>
+    <string name="link_text_my_podcasts">My Podcasts</string>
+
+
+
 </resources>

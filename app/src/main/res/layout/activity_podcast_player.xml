@@ -4,128 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/bright_06"
-    tools:context="com.example.android.project_podcastplayer.PodcastPlayer" >
+    android:orientation="vertical"
+    tools:context="com.example.android.project_podcastplayer.PodcastPlayer">
 
-    <LinearLayout
-        android:id="@+id/card_activities"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:orientation="vertical"
-        android:layout_weight="0"
-        android:background="@drawable/card_background"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="4dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Action Center"
-                android:layout_marginBottom="8dp"
-                android:textColor="@android:color/white"
-                android:textAllCaps="true"/>
+    <LinearLayout style="@style/card_superclass.card_activity_overview">
 
-        </LinearLayout>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="This area will contain buttons for the user to navigate to the other components of the app.
-                \nSelecting any of the buttons will take the user to the respective activity"
-            android:textColor="@android:color/white"
-            android:fontFamily="sans-serif-thin"/>
+            style="@style/activity_heading"
+            android:text="@string/podcast_player_heading" />
+
+        <TextView
+            style="@style/activity_description"
+            android:text="@string/podcast_player_description" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/fullplayer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:layout_weight="1"
-        android:background="@drawable/card_background"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="8dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="This area will contain full player with player controls, expanded info on currently playing episode, plus additional controls like bookmarks, share, etc.."
-                android:textColor="@android:color/white"
-                android:fontFamily="sans-serif-thin"/>
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/buttons_to_other_activities"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:layout_weight="0"
-        android:background="@drawable/card_background"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical">
+    <LinearLayout style="@style/card_superclass.card_linked_activities">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Content in this Activity would link to these Activities:"
-            android:textColor="@android:color/white"
-            android:fontFamily="sans-serif-thin"/>
+            style="@style/links_heading"
+            android:text="@string/all_activities_linked_activities_heading" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_full_player_to_home"
+            style="@style/links_button"
+            android:text="@string/link_text_home" />
 
-            <Button
-                android:id="@+id/button_full_player_to_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Home"/>
+        <Button
+            android:id="@+id/button_full_player_to_mypodcasts"
+            style="@style/links_button"
+            android:text="@string/link_text_my_podcasts" />
 
-            <Button
-                android:id="@+id/button_full_player_to_podcast_details"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Podcast Details" />
+        <Button
+            android:id="@+id/button_full_player_to_discoverpodcasts"
+            style="@style/links_button"
+            android:text="@string/link_text_discover_podcasts" />
 
-        </LinearLayout>
+        <Button
+            android:id="@+id/button_full_player_to_podcast_details"
+            style="@style/links_button"
+            android:text="@string/link_text_podcast_details" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button_full_player_to_mypodcasts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="My Podcasts" />
-
-            <Button
-                android:id="@+id/button_full_player_to_discoverpodcasts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Discover Podcasts"/>
-
-        </LinearLayout>
 
     </LinearLayout>
 

@@ -4,90 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/bright_03"
-    tools:context="com.example.android.project_podcastplayer.PodcastDetails" >
+    android:orientation="vertical"
+    tools:context="com.example.android.project_podcastplayer.PodcastDetails">
 
-    <LinearLayout
-        android:id="@+id/card_podcast_details_and_episodes"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:padding="8dp"
-        android:orientation="vertical"
-        android:layout_weight="1"
-        android:background="@drawable/card_background"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="4dp">
+    <LinearLayout style="@style/card_superclass.card_activity_overview">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Podcast Channel Details\/Overview\/Episodes\n+\nMini-player "
-            android:layout_marginBottom="8dp"
-            android:textColor="@android:color/white"
-            android:textAllCaps="true"/>
+            style="@style/activity_heading"
+            android:text="@string/podcast_details_heading" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="This Activity would contain a listing of all available podcast channels, searchable and sortable, for the user to peruse and discover.
-\nIt would also contain a miniplayer with minimal playback controls, so the user can listen to podcasts while using this Activity."
-            android:textColor="@android:color/white"
-            android:fontFamily="sans-serif-thin"/>
+            style="@style/activity_description"
+            android:text="@string/podcast_details_description" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/buttons_to_other_activities"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:layout_weight="0"
-        android:background="@drawable/card_background"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical">
+    <LinearLayout style="@style/card_superclass.card_linked_activities">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Content in this Activity would link to these Activities:"
-            android:textColor="@android:color/white"
-            android:fontFamily="sans-serif-thin"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button_podcastdetails_to_full_player"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Full\nPlayer"/>
-
-            <Button
-                android:id="@+id/button_podcastdetails_to_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Home\n"/>
+            style="@style/links_heading"
+            android:text="@string/all_activities_linked_activities_heading" />
 
         <Button
-            android:id="@+id/button_podcastdetails_to_discoverpodcasts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Discover\nPodcasts"/>
+            android:id="@+id/button_podcastdetails_to_home"
+            style="@style/links_button"
+            android:text="@string/link_text_home" />
 
         <Button
             android:id="@+id/button_podcastdetails_to_mypodcasts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="My\nPodcasts"/>
-            </LinearLayout>
+            style="@style/links_button"
+            android:text="@string/link_text_my_podcasts" />
+
+        <Button
+            android:id="@+id/button_podcastdetails_to_discoverpodcasts"
+            style="@style/links_button"
+            android:text="@string/link_text_discover_podcasts" />
+
+        <Button
+            android:id="@+id/button_podcastdetails_to_full_player"
+            style="@style/links_button"
+            android:text="@string/link_text_full_player" />
 
     </LinearLayout>
 

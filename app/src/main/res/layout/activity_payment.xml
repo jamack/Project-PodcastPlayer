@@ -4,72 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/bright_05"
-    tools:context="com.example.android.project_podcastplayer.Payment" >
+    android:orientation="vertical"
+    tools:context="com.example.android.project_podcastplayer.Payment">
 
-    <LinearLayout
-        android:id="@+id/card_payment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:padding="8dp"
-        android:orientation="vertical"
-        android:layout_weight="1"
-        android:background="@drawable/card_background"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="4dp">
+    <LinearLayout style="@style/card_superclass.card_activity_overview">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Payment"
-            android:layout_marginBottom="8dp"
-            android:textColor="@android:color/white"
-            android:textAllCaps="true"/>
+            style="@style/activity_heading"
+            android:text="@string/payment_heading" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="This Activity would contain the means for the user to remove ads by purchasing the app."
-            android:textColor="@android:color/white"
-            android:fontFamily="sans-serif-thin"/>
+            style="@style/activity_description"
+            android:text="@string/payment_description" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/buttons_to_other_activities"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:layout_weight="0"
-        android:background="@drawable/card_background"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical">
+    <LinearLayout style="@style/card_superclass.card_linked_activities">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Content in this Activity would link to these Activities:"
-            android:textColor="@android:color/white"
-            android:fontFamily="sans-serif-thin"/>
+            style="@style/links_heading"
+            android:text="@string/all_activities_linked_activities_heading" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_payment_to_home"
+            style="@style/links_button"
+            android:text="@string/link_text_home" />
 
-            <Button
-                android:id="@+id/button_payment_to_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Home"/>
-
-        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

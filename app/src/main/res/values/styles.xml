@@ -8,4 +8,54 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="card_superclass">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:background">@drawable/card_background</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="card_superclass.card_activity_overview">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="card_superclass.card_linked_activities">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="activity_heading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="activity_description">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="links_heading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="links_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
 </resources>
