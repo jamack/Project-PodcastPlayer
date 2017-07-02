@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/bright_04"
-    tools:context="com.example.android.project_podcastplayer.MainActivity" >
+    tools:context="com.example.android.project_podcastplayer.DiscoverPodcasts" >
 
     <LinearLayout
-        android:id="@+id/card_podcasts"
+        android:id="@+id/card_discover_podcasts"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:padding="8dp"
@@ -20,40 +20,27 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="4dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Podcasts"
-                android:layout_marginBottom="8dp"
-                android:textColor="@android:color/white"
-                android:textAllCaps="true"/>
 
-        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Podcast Channels\n+\nMini-player"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This area will contain a vertical, scrollable list of available podcasts. Would implement search and sorting functions.
-                \nSelecting any of the podcasts will take the user to the Podcast Details activity"
+            android:text="This Activity would contain a listing of all available podcast channels, searchable and sortable, for the user to peruse and discover.
+\nIt would also contain a miniplayer with minimal playback controls, so the user can listen to podcasts while using this Activity."
             android:textColor="@android:color/white"
             android:fontFamily="sans-serif-thin"/>
-        <!--TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="99% Invisible"
-            android:textColor="@android:color/white"
-            android:drawableLeft="@drawable/thumbnail_99pi"/-->
-        <!--ImageView
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:src="@drawable/thumbnail_99pi"/-->
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/miniplayer"
+        android:id="@+id/buttons_to_other_activities"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"
@@ -62,22 +49,39 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="4dp"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Content in this Activity would link to these Activities:"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-thin"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <!--ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/thumbnail_99pi"/-->
-            <TextView
-                android:layout_width="match_parent"
+
+            <Button
+                android:id="@+id/button_discoverpodcasts_to_podcast_details"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="This area will contain a mini-player with player controls and info on currently playing episode.Touching any part other than the control buttons will take user to the Full Player activity."
-                android:textColor="@android:color/white"
-                android:fontFamily="sans-serif-thin"/>
+                android:text="Podcast Details" />
+
+            <Button
+                android:id="@+id/button_discoverpodcasts_to_full_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Player"/>
+
+            <Button
+                android:id="@+id/button_discoverpodcasts_to_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"/>
+
         </LinearLayout>
     </LinearLayout>
 

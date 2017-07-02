@@ -68,19 +68,19 @@
                 android:id="@+id/button_home_to_podcast_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Podcast Details"/>
+                android:text="Podcast\nDetails"/>
 
             <Button
                 android:id="@+id/button_home_to_full_player"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Full Player"/>
+                android:text="Full\nPlayer"/>
 
             <Button
                 android:id="@+id/button_home_to_payment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Payment"/>
+                android:text="Payment\n"/>
 
 
         </LinearLayout>

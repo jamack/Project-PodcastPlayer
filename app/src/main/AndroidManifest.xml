@@ -30,7 +30,9 @@
         <activity
             android:name=".Payment"
             android:label="Purchase"></activity>
-        <activity android:name=".PodcastPlayer"></activity>
+        <activity android:name=".PodcastPlayer"
+            android:label="Podcast Player">
+        </activity>
     </application>
 
 </manifest>

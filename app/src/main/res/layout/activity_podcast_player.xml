@@ -62,11 +62,71 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="This area will contain full player with player controls, expanded info on currently playing episode, plus additional controls like bookmarks, share, etc..
-                \nTouching any part other than the control buttons will take user to the Full Player activity."
+                android:text="This area will contain full player with player controls, expanded info on currently playing episode, plus additional controls like bookmarks, share, etc.."
                 android:textColor="@android:color/white"
                 android:fontFamily="sans-serif-thin"/>
         </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_to_other_activities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_weight="0"
+        android:background="@drawable/card_background"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Content in this Activity would link to these Activities:"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-thin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_full_player_to_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"/>
+
+            <Button
+                android:id="@+id/button_full_player_to_podcast_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Podcast Details" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_full_player_to_mypodcasts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Podcasts" />
+
+            <Button
+                android:id="@+id/button_full_player_to_discoverpodcasts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover Podcasts"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>

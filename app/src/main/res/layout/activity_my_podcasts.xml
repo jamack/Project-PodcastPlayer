@@ -9,7 +9,7 @@
     tools:context="com.example.android.project_podcastplayer.MyPodcasts" >
 
     <LinearLayout
-        android:id="@+id/card_genre_01"
+        android:id="@+id/card_my_podcasts"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:padding="8dp"
@@ -21,47 +21,10 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="4dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="news &#038; politics"
-                android:layout_marginBottom="8dp"
-                android:textColor="@android:color/white"
-                android:textAllCaps="true"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="This area will contain a vertical, scrollable list of the user\'s favorited podcasts, separated by genre.
-                \nSelecting any of the podcasts will take the user to the Podcast Details activity"
-            android:textColor="@android:color/white"
-            android:fontFamily="sans-serif-thin"/>
-        <!--TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="99% Invisible"
-            android:textColor="@android:color/white"
-            android:drawableLeft="@drawable/thumbnail_99pi"/-->
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/card_genre_02"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/card_background"
-        android:padding="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:orientation="vertical">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Design"
+            android:text="User\'s Favorite Podcast Channels\n+\nMini-player"
             android:layout_marginBottom="8dp"
             android:textColor="@android:color/white"
             android:textAllCaps="true"/>
@@ -69,46 +32,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This area will contain a vertical, scrollable list of the user\'s favorited podcasts, separated by genre.
-                \nSelecting any of the podcasts will take the user to the Podcast Details activity"
+            android:text="This Activity would contain a listing of podcast channel that the user has marked as \'favorite\', organized by genre.
+\nIt would also contain a miniplayer with minimal playback controls, so the user can listen to podcasts while using this Activity."
             android:textColor="@android:color/white"
             android:fontFamily="sans-serif-thin"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/card_genre_03"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/card_background"
-        android:padding="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Technology"
-            android:layout_marginBottom="8dp"
-            android:textColor="@android:color/white"
-            android:textAllCaps="true"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="This area will contain a vertical, scrollable list of the user\'s favorited podcasts, separated by genre.
-                \nSelecting any of the podcasts will take the user to the Podcast Details activity"
-            android:textColor="@android:color/white"
-            android:fontFamily="sans-serif-thin"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/miniplayer"
+        android:id="@+id/buttons_to_other_activities"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"
@@ -117,22 +49,39 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="4dp"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Content in this Activity would link to these Activities:"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-thin"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <!--ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/thumbnail_99pi"/-->
-            <TextView
-                android:layout_width="match_parent"
+
+            <Button
+                android:id="@+id/button_mypodcasts_to_podcast_details"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="This area will contain a mini-player with player controls and info on currently playing episode.Touching any part other than the control buttons will take user to the Full Player activity."
-                android:textColor="@android:color/white"
-                android:fontFamily="sans-serif-thin"/>
+                android:text="Podcast Details" />
+
+            <Button
+                android:id="@+id/button_mypodcasts_to_full_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Player"/>
+
+            <Button
+                android:id="@+id/button_mypodcasts_to_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"/>
+
         </LinearLayout>
     </LinearLayout>
 
