@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- This style contains the shared attributes of the (2) cards: overview & linked activities -->
     <style name="card_superclass">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_marginLeft">8dp</item>
@@ -17,6 +18,7 @@
         <item name="android:padding">8dp</item>
     </style>
 
+    <!-- Inherits from the card_superclass. Adds attributes for the card displaying overview (heading + description) for activity -->
     <style name="card_superclass.card_activity_overview">
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_marginBottom">4dp</item>
@@ -24,6 +26,7 @@
         <item name="android:layout_weight">1</item>
     </style>
 
+    <!-- Inherits from the card_superclass. Adds attributes for the card displaying the buttons for an activity's other linked activities -->
     <style name="card_superclass.card_linked_activities">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">8dp</item>
@@ -31,6 +34,7 @@
         <item name="android:layout_weight">0</item>
     </style>
 
+    <!-- The heading portion of the activity overview -->
     <style name="activity_heading">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -39,6 +43,7 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <!-- The description text body of the activity overview -->
     <style name="activity_description">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -46,6 +51,7 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <!-- The heading portion of the linked activities card -->
     <style name="links_heading">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -53,6 +59,7 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <!-- The buttons leading to the various linked activities -->
     <style name="links_button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

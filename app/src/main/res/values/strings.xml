@@ -20,6 +20,7 @@
     </string>
     <string name="my_podcasts_description">This Activity would contain a listing of podcast channel that the user has marked
         as \'favorite\', organized by genre.
+        \n\nLooks like displaying a limited number of podcasts from a much larger total might involve the RecyclerView class.
         \n\nIt would also contain a miniplayer with minimal playback controls, so the user can listen to podcasts while using
         this Activity.
     </string>
@@ -31,6 +32,7 @@
     </string>
     <string name="discover_podcasts_description">This Activity would contain a listing of all available podcast channels,
         searchable and sortable, for the user to peruse and discover.
+        \n\nLooks like displaying a limited number of podcasts from all available podcasts might involve the RecyclerView class.
         \n\nIt would also contain a miniplayer with minimal playback controls, so the user can listen to podcasts while using this Activity.
     </string>
 
@@ -51,13 +53,19 @@
         \nAction Center
     </string>
     <string name="podcast_player_description">This Activity will contain full player with player controls,
-        expanded info on currently playing episode, plus additional controls like bookmarks, share, etc..
+        expanded info on currently playing episode, plus additional controls like bookmarks, share, etc.
+        \n\nLooks like player functionality would be implemented via the MediaPlayer API and the AudioManager API.
         \n\nThis Activity will also contain buttons for the user to navigate to the other components of the app.
     </string>
 
     <!-- These strings are specific to the Payment activity -->
     <string name="payment_heading">Payment</string>
-    <string name="payment_description">This Activity would contain the means for the user to remove ads by purchasing the app.</string>
+    <string name="payment_description">This Activity would contain the means for the user to remove ads by purchasing the app.
+        \n\nIt looks like payment can be accomplished via Google\'s In-app Billing Version 3 API. My understanding is that
+        this API passes information from my app to Google Play and vice versa. Google Play then passes\/receives data from Google\'s servers.
+        Thus, all financial transactions actually happen on Google\'s end, not within my app.
+        \n\nhttps:\/\/developer.android.com/google/play/billing/billing_overview.html"
+    </string>
 
     <!-- These strings are used by multiple activities -->
     <string name="all_activities_linked_activities_heading">Content in this Activity would link to these Activities:</string>
